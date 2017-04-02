@@ -57,7 +57,7 @@ ID,Book Title,Book Genre,Book Description,Book Cover URL,Author 1 First Name,Aut
 ## Notes
 
 * You can use a styling library if you'd like
-* You can use server-side templating or AJAX/RESTful services. There are trade-offs with each, but server-side templating will likely be faster to build.
+* You can use server-side templating or AJAX/RESTful services. There are trade-offs with each.
 * You can use a raw database driver, a query builder, or an ORM for your database connection. A query builder, such as Knex, is recommended.
 * Use feature-branch workflows. You should end up with one commit for each feature.
 * Deploy your work
