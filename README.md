@@ -1,6 +1,6 @@
 # Objective
 
-Working on your _own_ while following the instructions below and the user stories given, attempt to create Galvanize Reads 2.0 for your client.
+Working on your _own_ while following the instructions below and the user stories given, attempt to create Galvanize Reads 2.0 for your client in two days.
 
 ## Purpose
 
