@@ -1,3 +1,11 @@
+# Objective
+
+Working on your _own_ while following the instructions below and the user stories given, attempt to create Galvanize Reads 2.0 for your client.
+
+## Purpose
+
+This will be your first solo full stack application with a deadline. This project will test all the skills you have learned thus far. Instead of focusing on the end product, I want you all to take this time to hone your planning process. When you get this project your brain will tell you to **start coding immediately** ignore that thought. The world is not on fire and you will be fine, I promise. Take the time to lay out every aspect of the project. Remember,understanding what is being asked of you and knowing how to execute it are two different things. The more deliberate and careful you are with your planning, the smoother development will go. This is also an opportunity for you to identify areas where you need improvement. Take notes along the way about where you got caught up and retro after the project for maximum agile execution. Reflection is a powerful tool, utilize it correctly to become a better developer.
+
 ## Background
 
 **Galvanize Reads** is a book catalog service that stores a list of recommended technology books. You are building a web app for them. It should allow you to:
@@ -42,7 +50,7 @@ Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current St
 
 ## Sample Data
 
-Your app should accomodate and make use of all of the sample data, which can be downloaded [here](https://s3-us-west-2.amazonaws.com/assessment-images/galvanize_reads/galvanize_reads_sample_data.csv). Note that the data is denormalized, and will additionally require some transformation to get into the database.
+Your app should accommodate and make use of all of the sample data, which can be downloaded [here](https://s3-us-west-2.amazonaws.com/assessment-images/galvanize_reads/galvanize_reads_sample_data.csv). Note that the data is denormalized, and will additionally require some transformation to get into the database.
 
 ```
 ID,Book Title,Book Genre,Book Description,Book Cover URL,Author 1 First Name,Author 1 Last Name,Author 1 Biography,Author 1 Portrait URL,Author 2 First Name,Author 2 Last Name,Author 2 Biography,Author 2 Portrait URL,Author 3 First Name,Author 3 Last Name,Author 3 Biography,Author 3 Portrait URL
@@ -56,11 +64,16 @@ ID,Book Title,Book Genre,Book Description,Book Cover URL,Author 1 First Name,Aut
 
 ## Notes
 
-* You can use a styling library if you'd like
-* You can use server-side templating or AJAX/RESTful services. There are trade-offs with each.
+* You can use a styling library if you'd like.
+* You can use vanilla JS, a FEF, or server side rendering to complete this app.
 * You can use a raw database driver, a query builder, or an ORM for your database connection. A query builder, such as Knex, is recommended.
 * Use feature-branch workflows. You should end up with one commit for each feature.
 * Deploy your work
+* MVP ALWAYS
+* Build in full features
+* Take breaks
+* Have fun
+* The instructional staff has been given strict instructions to only help with clarifying questions. The help queue will not be manned. I promise, you can all figure this out.
 
 ## Wireframes
 
@@ -80,12 +93,49 @@ You can use these wireframes as a reference.
 
 ## How to Submit Your Assessment
 
-Fork/clone [this repo](https://github.com/gSchool/galvanize-reads).
-Add a README to your project that has:
+Create a repo for your app. If decoupled, make sure each repo has a README
+
+The README(s) should _at minimum_ include:
 
 * A link to your deployed site
 * Link to your tracker project
 * Links to any repos you used with updated code
-* A data model of the final data model of the project
+* A data model of the final data model of the project (ERD)
 
-Submit a pull request to the orginal repo with this README.
+## Helpful Resources
+
+* [Polya Method](https://math.berkeley.edu/~gmelvin/polya.pdf)
+
+* [Project Proposal](https://github.com/gSchool/galvanize-shark-tank/tree/master/drills/version-1)
+
+* [Knex docs](https://knexjs.org/)
+
+* [Agile in depth](https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto)
+
+* [Writing Agile Stories](https://www.yodiz.com/blog/writing-user-stories-examples-and-templates-in-agile-methodologies/)
+
+* [User Story Drills](https://github.com/gSchool/galvanize-kitchen/tree/master/drills/version-1)
+
+* [Info Graphic SMART goals](https://charlesduhigg.com/infographic-tackle-your-to-do-list/)
+
+* [Git feat Branching](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+
+* [In depth look at joins](http://www.sql-join.com/)
+
+* [Ven Diagram of Joins](http://elektronik.us/wp-content/uploads/sql-joins-venn-diagram-splendid-reference-tableau-custom-sql-and-alteryx.png)
+
+* [Express w/ Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
+
+* [ERD's and data modeling](https://www.bridging-the-gap.com/erd-entity-relationship-diagram/)
+
+* [ERD's Lucid Chart](https://www.lucidchart.com/pages/er-diagrams)
+
+* [Knex Cheat Sheet](https://devhints.io/knex)
+
+* [Seeds and Migrations Cheat Sheet](http://perkframework.com/v1/guides/database-migrations-knex.html)
+
+* [Cascade on Delete](https://medium.com/@JonRamer/day-32-knex-js-c5ef19827595)
+
+* [Express Router](https://scotch.io/tutorials/learn-to-use-the-new-router-in-expressjs-4)
+
+* [RESTful API](https://restfulapi.net/22)
