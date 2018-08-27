@@ -11,7 +11,7 @@ router.get('/', (req, res, next) => {
   knex('authors')
   .returning('*')
   .then((authors) => {
-      res.render('authors', {authors});
+      res.render('index', {authors});
   })
   .catch((err) => {
       next(err);

@@ -7,17 +7,15 @@ let env = process.env.NODE_ENV || 'development';
 let config = require('../knexfile')[env];
 let knex = require('knex')(config);
 
-router.get('/', (req, res, next) => {
-    knex('authors')
-    .returning('*')
-    .then((user_report) => {
-        res.render('index', {authors});
-    })
-    .catch((err) => {
-        next(err);
-    });
+router.get('/authors', (req, res, next) => {
+  knex('authors')
+  .returning('*')
+  .then((authors) => {
+      res.render('authors', {authors});
+  })
+  .catch((err) => {
+      next(err);
   });
-
-
+});
 
 module.exports = router;

@@ -1,7 +1,6 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTable('books', (table) => {
-        table.foreign('books').references('author_of_books');
-        table.increments('id');
+        table.increments('id').primary();
         table.text('title');
         table.text('genre');
         table.text('description');
