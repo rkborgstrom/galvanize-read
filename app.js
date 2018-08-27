@@ -3,12 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
-// const config = require('./knexfile.js')['development'];
+const config = require('./knexfile.js')['development'];
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
-// const knex = require('knex')(config);
+const knex = require('knex')(config);
 const morgan = require('morgan');
+const index = require('./routes/index');
+const authors = require('./routes/authors');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -24,9 +26,13 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// app.get('/', (req, res, next) => {
-//     res.render('index', {user_report: []});
-// })
+app.get('/', (req, res, next) => {
+    res.render('index', {user_report: []});
+})
+
+app.use('/index', index);
+app.use(authors);
+
 
 app.use((_req, res) => {
     res.sendStatus(404);
