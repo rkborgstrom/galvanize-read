@@ -24,9 +24,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.get('/', (req, res, next) => {
-    res.render('index', {user_report: []});
-})
+// app.get('/', (req, res, next) => {
+//     res.render('index', {user_report: []});
+// })
 
 app.use((_req, res) => {
     res.sendStatus(404);
