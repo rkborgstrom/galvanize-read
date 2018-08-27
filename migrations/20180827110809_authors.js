@@ -1,10 +1,11 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTable('authors', (table) => {
+        table.foreign('authors').references('books');
         table.increments('id');
-        table.string('first_name');
-        table.string('last_name');
-        table.string('bio');
-        table.string('portrait_url');
+        table.text('first_name');
+        table.text('last_name');
+        table.text('bio');
+        table.text('portrait_url');
 
     });
 };

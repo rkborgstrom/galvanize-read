@@ -3,9 +3,7 @@ exports.seed = function (knex, Promise) {
   return knex('books').del()
     .then(function () {
       // Inserts seed entries
-      return knex('books').insert([
-
-        {
+      return knex('books').insert([{
           title: 'Python In A Nutshell',
           genre: 'Python',
           description: "This book offers Python programmers one place to look when they need help remembering or deciphering the syntax of this open source language and its many powerful but scantily documented modules. This comprehensive reference guide makes it easy to look up the most frequently needed information--not just about the Python language itself, but also the most frequently used parts of the standard library and the most important third-party extensions.",
