@@ -1,43 +1,38 @@
+<% include partials/header %>
 
-    <main id='background'>
-        <section class='assassin-container'>
-            <section id="assassin-section">
-                <h1>Authors</h1>
-                <section class="row">
 
-                    <% for(data of authors) { %>
+  <main id='background'>
+    <section class='main-container'>
+      <section id="main-section">
+        <h1>Authors</h1>
+        <section class="row">
 
-                        <div class="w-100"></div>
+          <% for(data of authors) { %>
+            <div class="w-100"></div>
 
-                        <strong>
-                            <%=data.first_name%> &nbsp; </strong>
+            <strong>
+              <%=data.first_name%>
+                <%=data.last_name%>&nbsp; </strong>
+            <div class="w-100"></div>
 
-                        <div class="w-100"></div>
+            <section class="col-6 col-sm-3">
+              <strong>Bio:</strong>
+              <%=data.bio%>
+            </section>
 
-                        <section class="col-6 col-sm-3">
-                            <strong>Rating:</strong>
-                            <%=data.last_name%>
-                        </section>
+            <div class="w-100"></div>
 
-                        <section class="col-6 col-sm-3">
-                            <strong>Bio:</strong>
-                            <%=data.bio%>
-                        </section>
+            <section class="col-6 col-sm-3">
+              <strong>URL:</strong>
+              <%=data.portrait_url%>
+            </section>
+            <br></br>
 
-                        <div class="w-100"></div>
+            <%}%>
 
-                        <section class="col-6 col-sm-3">
-                            <strong>URL:</strong>
-                            <%=data.portrait_url%>
-                        </section>
-                        <br></br>
-
-                        <%}%>
-
-                            <section id="buttons" class="buttons">
-                                <button id="edit" type="button">Edit</button>
-                                <button id="delete" type="button">Delete</button>
-                                <a href="add_assassin.html">
-                                    <button id="add" type="button">Add</button>
-                                </a>
-                            </section>
+              <section id="buttons" class="buttons">
+                <button id="edit" type="button">Edit</button>
+                <button id="delete" type="button">Delete</button>
+                <button id="add" type="button">Add</button>
+                </a>
+              </section>

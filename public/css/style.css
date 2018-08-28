@@ -20,3 +20,30 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    width: 2400px;
+}
+
+* {
+    font-family: helvetica;
+}
+
+body {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    background-color: whitesmoke;
+    height: 100%;
+    padding-left: 10%;
+}
+
+
+.buttons {
+    float: right;
+}
+

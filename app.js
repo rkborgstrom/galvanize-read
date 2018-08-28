@@ -9,9 +9,8 @@ const app = express();
 const port = process.env.PORT || 8000;
 const knex = require('knex')(config);
 const morgan = require('morgan');
-const index = require('./routes/index');
 const authors = require('./routes/authors');
-
+const books = require('./routes/books');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -30,9 +29,8 @@ app.get('/', (req, res, next) => {
     res.render('index', {authors: []});
 })
 
-app.use('/index', index);
 app.use(authors);
-
+app.use(books);
 
 app.use((_req, res) => {
     res.sendStatus(404);
