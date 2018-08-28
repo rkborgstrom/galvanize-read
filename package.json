@@ -1,0 +1,33 @@
+{
+  "name": "galvanize-reads-instructions",
+  "version": "1.0.0",
+  "description": "**Galvanize Reads** is a book catalog service that stores a list of recommended technology books. You are building a web app for them. It should allow you to:",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkborgstrom/galvanize-reads-instructions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkborgstrom/galvanize-reads-instructions/issues"
+  },
+  "homepage": "https://github.com/rkborgstrom/galvanize-reads-instructions#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "knex": "^0.15.2",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "pg": "^7.4.3",
+    "sqlite3": "^4.0.2"
+  }
+}
