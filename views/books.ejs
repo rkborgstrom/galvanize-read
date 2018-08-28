@@ -16,46 +16,39 @@
   </section>
 </section>
 
-<main id='background'>
-  <hr>
-  <section class='main-container'>
-    <section id="main-section">
+        <main id='background'>
+          <hr>
+          <section class='main-container-author'>
+            <section id="main-section-author">
 
-      <h1>Books</h1>
-      <hr>
-      <section class="rows">
+              <h1>Books</h1>
+              <hr>
+              <section class="rows2">
 
-        <% for(data of books) { %>
+                <% for(data of books) { %>
+                <div class="w-100"></div>
+                <section class="col-6 col-sm-3">
+                  <img src='<%=data.cover_url%>' height='110' width='110'>
+                </section>
+                <div class="w-100"></div>
+                <strong>Genre:</strong>
+                <%=data.genre%>
+                <div class="w-100"></div>
+                <strong>Title:
+                  <%=data.title%>&nbsp
+                </strong>
+                <div class="w-100"></div>
+                <div class="w-100"></div>
+                <strong>Description:</strong>
+                <%=data.description%>
+                <section id="buttons" class="buttons">
+                  <button id="edit" type="button">Edit</button>
+                  <button id="delete" type="button">Delete</button>
+                  </a>
+                  <hr>
+                </section>
 
-
-        <div class="w-100"></div>
-
-
-        <strong>Title:
-          <%=data.title%>&nbsp
-        </strong>
-<br>
-        <section id="buttons" class="buttons">
-          <button id="edit" type="button">Edit</button>
-          <button id="delete" type="button">Delete</button>
-        </section>
-        <div class="w-100"></div>
-
-        <hr>
-        <section class="col-4 col-sm-3">
-          <img src='<%=data.cover_url%>' height='130' width='130'>
-        </section>
-
-        <section class="col-4 col-sm-3">
-          <strong>Description:</strong>
-          <%=data.description%>
-        </section>
-        <br></br>
-        <br></br>
-        <section class="col-4 col-sm-3">
-          <strong>Genre:</strong>
-          <%=data.genre%>
-        </section>
-
-        <hr>
-        <%}%>
+                <br>
+                <br>
+                <div class="w-100"></div>
+                <%}%>

@@ -19,6 +19,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 
 .rows {
@@ -27,6 +28,13 @@
     width: 2100px;
     padding-right: 40%;
 }
+.rows2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    padding-right: 40%;
+}
+
 
 * {
     font-family: helvetica;
@@ -43,6 +51,12 @@ body {
     padding-left: 10%;
 }
 
+.main-container-author {
+    display: flex;
+    background-color: whitesmoke;
+    height: 100%;
+    padding-left: 10%;
+}
 
 .buttons {
     float: right;
