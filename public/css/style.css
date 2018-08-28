@@ -24,7 +24,8 @@
 .rows {
     display: flex;
     flex-wrap: wrap;
-    width: 2400px;
+    width: 2100px;
+    padding-right: 40%;
 }
 
 * {

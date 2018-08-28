@@ -2,25 +2,32 @@
 
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <hr>
+  <section class="containers">
+    <section class="row">
+      <a class="col-6 col-md-3 btn btn-lg px-4 btn-secondary" href="/authors" role="button">Authors
+        <img src="/images/authors.jpg" height="30" alt="Authors">
+      </a>
+      <a class=" col-6 col-md-3 btn btn-lg px-4 btn-secondary active" href="/books" role="button">Books
+        <img src="/images/books.jpeg" height="30" alt="Books">
+      </a>
+    </section>
+  </section>
 
-
-<p class="row"></p>
-<a class="col-3 btn btn-lg px-4 btn-dark" href="#" role="button">Authors <img src="/images/authors.jpg" height="30" alt="Authors"></a>
-<p class="col"></p>
-<a class=" col-3 btn btn-lg px-4 btn-dark" href="#" role="button">Books <img src="/images/books.jpeg" height="30" alt="Books"></a>
   <main id='background'>
+    <hr>
     <section class='main-container'>
       <section id="main-section">
+       
         <h1>Books</h1>
+        <hr>
         <section class="rows">
 
           <% for(data of books) { %>
-            <div class="w-100"></div>
 
-            <strong>
-              <%=data.title%>
-            </strong>
+
             <div class="w-100"></div>
 
             <section class="col-4 col-sm-3">
@@ -28,8 +35,15 @@
               <%=data.genre%>
             </section>
 
+  
+
             <div class="w-100"></div>
 
+            <hr>
+            <section class="col-4 col-sm-3">
+              <img src='<%=data.cover_url%>' height='130' width='130'>
+            </section>
+            
             <section class="col-4 col-sm-3">
               <strong>Description:</strong>
               <%=data.description%>
@@ -37,14 +51,16 @@
             <br></br>
             <br></br>
 
-
-
+            <strong>Title:
+                <%=data.title%>
+              </strong>
+              <br>
             <section id="buttons" class="buttons">
               <button id="edit" type="button">Edit</button>
               <button id="delete" type="button">Delete</button>
-              <button id="add" type="button">Add</button>
-              </a>
-
+              <div class="w-100"></div>
+   
 
             </section>
+            <hr>
             <%}%>
