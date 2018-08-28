@@ -11,6 +11,7 @@ const knex = require('knex')(config);
 const morgan = require('morgan');
 const authors = require('./routes/authors');
 const books = require('./routes/books');
+const add = require('./routes/add');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -31,6 +32,7 @@ app.get('/', (req, res, next) => {
 
 app.use(authors);
 app.use(books);
+app.use(add);
 
 app.use((_req, res) => {
     res.sendStatus(404);
